@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Inter:wght@100..900&display=swap');
+
+
+* {
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+nav {
+
+    color: white;
+    width: 100vw;
+    height: 16vh;
+    background-color: #a17c2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer {
+
+    color: white;
+    width: 100vw;
+    height: 16vh;
+    background-color: #a17c2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.mostrar {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 30vw;
+    justify-content: space-between;
+    position: fixed;
+    background-color: black;
+    left: 0;
+    top: 16vh;
+    padding: 2vw;
+    width: 100vw;
+
+}
+
+nav div {
+
+    display: flex;
+    width: 24.11%;
+    justify-content: space-between;
+
+}
+
+nav,
+header,
+main {
+
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 120vh;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+section div {
+    width: 45.83%;
+
+
+}
+
+section div img, video{
+    width: 100%;
+
+}
+
+header {
+
+    height: 43vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+
+    margin: 0;
+    font-size: 40px;
+}
+
+h1,
+header h3,
+nav a,
+header a {
+
+    line-height: 125%;
+}
+
+nav h1 {
+
+    font-weight: 400;
+
+
+}
+
+header h1 {
+
+    font-family: 'Aboreto', cursive;
+
+}
+
+header h3 {
+
+    text-transform: uppercase;
+    color: #a17c2c;
+    letter-spacing: 5px;
+
+}
+
+header p {
+
+    font-size: 20px;
+}
+
+nav a {
+
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a {
+    color: #ffffff;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover{
+    color: rgb(71, 71, 71);
+}
+
+header a {
+
+    color: #a17c2c;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+nav span {
+    display: none;
+}
+
+.icon-menu::before {
+
+    color: white;
+    font-size: 6vw;
+
+}
+
+header a,
+span.icon-menu:hover {
+
+    cursor: pointer;
+
+}
+
+
+@media(max-width: 1200px) {
+
+    nav div {
+        width: 50%;
+    }
+
+    main section {
+        height: auto;
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    nav div {
+        display: none;
+    }
+
+    nav span {
+        display: inline;
+    }
+
+    section {
+        height: auto;
+    }
+
+    section div {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+}
